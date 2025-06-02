@@ -1,5 +1,7 @@
 # JavaScript
 
+<img width="708" alt="image" src="https://github.com/user-attachments/assets/4d503859-d0d7-4d90-83dd-280d6baba6f5" />
+
 ---
 
 ## 🔹 1. Client-Side Scripting
@@ -22,6 +24,7 @@ Client-side scripting runs **in the user's browser**, not on the web server.
 * Used for UI interaction, form validation, animations, etc.
 
 ---
+
 
 ## 🔹 2. Server-Side Scripting
 
@@ -47,6 +50,7 @@ server.listen(3000);
 * Slower compared to client-side for certain tasks because it involves **network requests**.
 
 ---
+<img width="899" alt="image" src="https://github.com/user-attachments/assets/73c98f66-12a7-4ef7-81f8-0b5d7ca3904a" />
 
 ## 🔹 3. Request-Response Time and Latency
 
