@@ -102,4 +102,4 @@ Why? Because `setTimeout` goes to the Web API and then to the task queue, and it
 * It’s **single-threaded** but asynchronous via **Web APIs**, **event loop**, and **callback queue**.
 * Understanding this helps with debugging, performance optimization, and writing better asynchronous code.
 
-Would you like an infographic of this process or a code sandbox to experiment with the event loop?
+
