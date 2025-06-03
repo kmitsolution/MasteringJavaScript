@@ -1,4 +1,4 @@
-Absolutely! Let's go deeper into **JavaScript variables**, **data types**, and **object-oriented features**, then tie it all into an enhanced example.
+**JavaScript variables**, **data types**, and **object-oriented features**, then tie it all into an enhanced example.
 
 ---
 
