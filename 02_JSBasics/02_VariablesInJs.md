@@ -122,6 +122,24 @@ console.log(dog.makeSound()); // Dog says Woof
 
 ## 🌐 Enhanced Complete HTML Page
 
+Great idea! Moving JavaScript to an external file is a **best practice** for clean, maintainable code. Let me guide you through restructuring your example into:
+
+---
+
+### ✅ Folder Structure
+
+```
+project-folder/
+│
+├── index.html
+└── js/
+    └── script.js
+```
+
+---
+
+## 📄 1. **HTML (`index.html`)**
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -131,65 +149,95 @@ console.log(dog.makeSound()); // Dog says Woof
 <body>
   <h1>Check the Console for Output</h1>
 
-  <script>
-    // === Primitive Types ===
-    var city = "New York";
-    let temperature = 28.5;
-    const isRaining = false;
-
-    console.log("City:", city);
-    console.log("Temperature:", temperature);
-    console.log("Is Raining:", isRaining);
-
-    // === Reference Types ===
-    const user = {
-      name: "John",
-      age: 35
-    };
-
-    const hobbies = ["reading", "gaming", "cycling"];
-
-    console.log("User Object:", user);
-    console.log("Hobbies Array:", hobbies);
-
-    // === Function ===
-    function greetUser(u) {
-      return `Hello, ${u.name}`;
-    }
-
-    console.log(greetUser(user));
-
-    // === Object-Oriented Programming ===
-    class Vehicle {
-      constructor(brand, model) {
-        this.brand = brand;
-        this.model = model;
-      }
-
-      getFullName() {
-        return `${this.brand} ${this.model}`;
-      }
-    }
-
-    let myVehicle = new Vehicle("Tesla", "Model S");
-    console.log("Vehicle:", myVehicle.getFullName());
-
-    // === Using let and const scopes ===
-    function scopeExample() {
-      if (true) {
-        let scopedLet = "I'm block-scoped";
-        var scopedVar = "I'm function-scoped";
-        console.log(scopedLet);
-      }
-      // console.log(scopedLet); // Error: scopedLet is not defined
-      console.log(scopedVar); // Works
-    }
-
-    scopeExample();
-  </script>
+  <!-- Link to the external JS file -->
+  <script src="js/script.js"></script>
 </body>
 </html>
 ```
+
+---
+
+## 📁 2. **JavaScript (`js/script.js`)**
+
+```js
+// === Primitive Types ===
+function showPrimitiveTypes() {
+  var city = "New York";
+  let temperature = 28.5;
+  const isRaining = false;
+
+  console.log("City:", city);
+  console.log("Temperature:", temperature);
+  console.log("Is Raining:", isRaining);
+}
+
+// === Reference Types ===
+function showReferenceTypes() {
+  const user = {
+    name: "John",
+    age: 35
+  };
+
+  const hobbies = ["reading", "gaming", "cycling"];
+
+  console.log("User Object:", user);
+  console.log("Hobbies Array:", hobbies);
+
+  console.log(greetUser(user));
+}
+
+// === Function with template literal ===
+function greetUser(u) {
+  return `Hello, ${u.name}`;
+}
+
+// === Object-Oriented Programming Example ===
+function showVehicleInfo() {
+  class Vehicle {
+    constructor(brand, model) {
+      this.brand = brand;
+      this.model = model;
+    }
+
+    getFullName() {
+      return `${this.brand} ${this.model}`;
+    }
+  }
+
+  let myVehicle = new Vehicle("Tesla", "Model S");
+  console.log("Vehicle:", myVehicle.getFullName());
+}
+
+// === Scope Example ===
+function scopeExample() {
+  if (true) {
+    let scopedLet = "I'm block-scoped";
+    var scopedVar = "I'm function-scoped";
+    console.log(scopedLet);
+  }
+  // console.log(scopedLet); // Uncommenting this will throw ReferenceError
+  console.log(scopedVar);
+}
+
+// === Call all functions ===
+showPrimitiveTypes();
+showReferenceTypes();
+showVehicleInfo();
+scopeExample();
+```
+
+---
+
+## ✅ What You Achieved
+
+* ✅ Clean separation of HTML and JavaScript
+* ✅ Organized code using functions
+* ✅ Reusable and modular structure
+* ✅ Easy to maintain and scale
+
+---
+
+
 
 ---
 
