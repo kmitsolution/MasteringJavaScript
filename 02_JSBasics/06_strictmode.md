@@ -51,22 +51,6 @@ Without strict mode, some errors fail silently. With strict mode, they throw exc
 function sum(a, a) {}  // ❌ SyntaxError
 ```
 
-#### 5. **Disallows `this` defaulting to `window` in functions**
-
-```js
-"use strict";
-function test() {
-  console.log(this);  // undefined instead of window
-}
-```
-
-#### 6. **Disallows `with` statements**
-
-```js
-"use strict";
-with (Math) { x = cos(2); }  // ❌ SyntaxError
-```
-
 ---
 
 ### ⚠️ When Not to Use
