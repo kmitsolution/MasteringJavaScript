@@ -76,7 +76,7 @@ Operate on binary representations.
 | `~`      | NOT                   | `~5`    → `-6`  |     |         |
 | `<<`     | Left shift            | `5 << 1` → `10` |     |         |
 | `>>`     | Right shift           | `5 >> 1` → `2`  |     |         |
-| `>>>`    | Zero-fill right shift | `5 >>> 1` → `2` |     |         |
+
 
 ---
 
